@@ -1,0 +1,5 @@
+rsync -avz --exclude 'node_modules' --exclude '.git' --exclude '.env' \
+-e "ssh -i ~/.ssh/n-virginia-sentinal-prime.pem" \
+. ubuntu@ec2-34-228-25-77.compute-1.amazonaws.com:~/app
+
+ssh -i "n-virginia-sentinal-prime.pem" ubuntu@ec2-34-228-25-77.compute-1.amazonaws.com
